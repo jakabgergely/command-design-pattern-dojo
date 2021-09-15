@@ -41,6 +41,7 @@ public class MoveKnightCommand extends AbstractCommand implements Command {
         try {
             board.moveKnight(dx, dy);
         } catch(IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());
             return new CommandResult(CommandResult.Status.INVALID);
         }
         return new CommandResult(CommandResult.Status.OK);

@@ -69,10 +69,10 @@ public class Board implements Receiver{
         //YOU HAVE TO USE COORDINATE CLASS!
         final Coordinate nc = player.add(dx, dy);
         if(nc.getX() < 0 || nc.getY() < 0 || nc.getX() >= numOfColumns || nc.getY() >= numOfRows){
-            throw new IllegalArgumentException("?");
+            throw new IllegalArgumentException("Move out of the board");
         }
         if(isAlreadyCovered(nc)) {
-            throw new IllegalArgumentException("??");
+            throw new IllegalArgumentException("Field already covered.");
         }
         player = nc;
         lepesek.add(nc);
