@@ -16,7 +16,7 @@
  */
 package hu.sonrisa.knightmove;
 
-import hu.sonrisa.knightmove.commands.CommandImpl;
+import hu.sonrisa.knightmove.commands.MoveKnightCommand;
 import hu.sonrisa.knightmove.commands.ResetCommand;
 
 import java.util.Scanner;
@@ -95,39 +95,9 @@ public class Game implements Client {
      * @return 
      */
     private Command stepToCommand(String step) {
-        //YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
-        //YOU HAVE USE COMMANDIMPL CLASS!
-        Command cmd = null;
-
-        switch(step){
-            case "ur" :
-                cmd = new CommandImpl(1, -2,board);
-                break;
-            case "ul" :
-                cmd = new CommandImpl(-1,-2,board);
-                break;
-            case "dr" :
-                cmd = new CommandImpl(1,2,board);
-                break;
-            case "dl" :
-                cmd = new CommandImpl(-1,2,board);
-                break;
-            case "lu" :
-                cmd = new CommandImpl(-2,-1,board);
-                break;
-            case "ld" :
-                cmd = new CommandImpl(-2,1,board);
-                break;
-            case "ru" :
-                cmd = new CommandImpl(2,-1,board);
-                break;
-            case "rd" :
-                cmd = new CommandImpl(2,1,board);
-                break;
-
-        }
-
-        return cmd;
+        //TODO YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
+        //YOU HAVE USE MoveKnightCommand CLASS!
+        return null;
     }
 
     /**

@@ -25,12 +25,12 @@ import hu.sonrisa.knightmove.Receiver;
  *
  * @author joe
  */
-public class CommandImpl extends AbstractCommand implements Command {
+public class MoveKnightCommand extends AbstractCommand implements Command {
 
     private int dx;
     private int dy;
 
-    public CommandImpl(int dx, int dy, Receiver board) {
+    public MoveKnightCommand(int dx, int dy, Receiver board) {
         super(board);
         this.dx = dx;
         this.dy = dy;
@@ -38,12 +38,9 @@ public class CommandImpl extends AbstractCommand implements Command {
     
     @Override
     public CommandResult execute() {
-        try {
-            board.moveKnight(dx, dy);
-        } catch(IllegalArgumentException ex) {
-            return new CommandResult(CommandResult.Status.INVALID);
-        }
-        return new CommandResult(CommandResult.Status.OK);
+        //TODO YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
+        //You can check ResetCommand for help with the structure
+        throw new UnsupportedOperationException("Not supported yet.");
     }
     
     

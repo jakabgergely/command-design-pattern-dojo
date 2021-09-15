@@ -56,26 +56,19 @@ public class Board implements Receiver{
     }
     
     public boolean isAlreadyCovered(Coordinate c){
-        return lepesek.contains(c);
+        //TODO YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
+        return false;
     }
     
     public boolean isEverythingCovered(){
-        return lepesek.size() == numOfRows * numOfColumns;
+        //TODO YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
+        return false;
     }
 
     @Override
     public void moveKnight(int dx, int dy) {
-        //YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
+        //TODO YOU HAVE TO IMPLEMENT THIS FUNCTION AT THE DOJO!
         //YOU HAVE TO USE COORDINATE CLASS!
-        final Coordinate nc = player.add(dx, dy);
-        if(nc.getX() < 0 || nc.getY() < 0 || nc.getX() >= numOfColumns || nc.getY() >= numOfRows){
-            throw new IllegalArgumentException("?");
-        }
-        if(isAlreadyCovered(nc)) {
-            throw new IllegalArgumentException("??");
-        }
-        player = nc;
-        lepesek.add(nc);
     }
 
     @Override
