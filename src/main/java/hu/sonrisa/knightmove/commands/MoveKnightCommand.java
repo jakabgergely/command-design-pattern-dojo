@@ -25,12 +25,12 @@ import hu.sonrisa.knightmove.Receiver;
  *
  * @author joe
  */
-public class CommandImpl extends AbstractCommand implements Command {
+public class MoveKnightCommand extends AbstractCommand implements Command {
 
     private int dx;
     private int dy;
 
-    public CommandImpl(int dx, int dy, Receiver board) {
+    public MoveKnightCommand(int dx, int dy, Receiver board) {
         super(board);
         this.dx = dx;
         this.dy = dy;
